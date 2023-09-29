@@ -5,6 +5,10 @@ module.exports = {
   siteMetadata: {
     title: `cv Alejandro Arango`,
     siteUrl: `https://www.yourdomain.tld`,
+    prueba: "mirando desde gpql"
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 }
