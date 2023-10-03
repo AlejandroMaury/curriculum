@@ -1,16 +1,14 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import {
-    container, heading,
-    navLinks,
-    navLinkItem,
-    navLinkText
-} from "./layout.modules.css";
+import { } from "./layout.modules.css";
+import { SiGatsby } from '@react-icons/all-files/si/SiGatsby'
+
 
 
 const Layout = ({ pageTitle, children }) => {
     return (<>
-        <div className="container">
+
+        <div className='navBar'>
             <nav>
                 <ul className="navLinks">
                     <li className="navLinkItem">
@@ -19,16 +17,32 @@ const Layout = ({ pageTitle, children }) => {
                     </li>
 
                     <li className="navLinkItem">
-                        <Link to="/about" className="navLinkText">About Me
+                        <Link to="/about" className="navLinkText">About
+                        </Link>
+                    </li>
+
+                    <li className="navLinkItem">
+                        <Link to="/resume" className="navLinkText">Resume
                         </Link>
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div className="container">
             <main>
                 <h1 className="heading">{pageTitle}</h1>
                 {children}
             </main>
         </div>
+        <div className='footer'>
+
+            <footer>
+                <h4>Alejandro Arango 2023. guidance by < SiGatsby /></h4>
+            </footer>
+
+        </div >
+
+
     </>)
 }
 

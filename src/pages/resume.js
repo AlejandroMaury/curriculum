@@ -4,15 +4,16 @@ import css from "../styles/style.css";
 import Layout from '../components/layout'
 
 
-export default function about() {
-  return (
-    <>
-      <Layout pageTitle="About">
-        <p>Acá se pondra toda la descripción acerca de mi</p>
+export default function resume() {
+    return (
+        <>
+            <Layout pageTitle="Resume">
+                <p>Acá deberá ir la educación y experiencias laborales
+                </p>
 
-      </Layout>
+            </Layout>
 
-      {/* <header >
+            {/* <header >
         <Link className="vinculos" to="/">Home</Link>
       </header>
       <main>
@@ -20,8 +21,8 @@ export default function about() {
           <p>I'm a mechanical engineer, </p>
         </div>
       </main> */}
-    </>
-  );
+        </>
+    );
 }
 
-export const Head = () => <title>About Me</title>;
+export const Head = () => <title>Resume</title>;
